@@ -10,8 +10,6 @@
  */
 package com.example.springbootstudy.test.thread;
 
-import com.sun.codemodel.internal.JForEach;
-import com.sun.jndi.ldap.pool.Pool;
 
 import java.util.ArrayList;
 import java.util.concurrent.*;

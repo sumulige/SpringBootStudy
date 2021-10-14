@@ -68,6 +68,15 @@
         SADK-CITICBANK-3.0.0.2.jar
         servlet-api.jar-->
 
+        <!-- https://mvnrepository.com/artifact/org.openjdk.jol/jol-core -->
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.16</version>
+            <!--            <scope>provided</scope>-->
+        </dependency>
+
+
     </dependencies>
 
     <build>

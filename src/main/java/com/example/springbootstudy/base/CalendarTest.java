@@ -10,7 +10,9 @@
  */
 package com.example.springbootstudy.base;
 
+import java.time.LocalDate;
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  * 〈一句话功能简述〉<br> 
@@ -24,12 +26,21 @@ public class CalendarTest {
 
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         Calendar cal1 = Calendar.getInstance();
-        cal1.add(Calendar.MARCH,-3);
+        System.out.println("cal1+getTime" + cal1.getTime());
+        cal1.add(Calendar.MARCH, -3);
 //        String s =
         System.out.println(cal1);
 
-        Class c =  Class.forName("com.example.springbootstudy.base.CalendarTest");
+        Class c = Class.forName("com.example.springbootstudy.base.CalendarTest");
         System.out.println(c);
+        LocalDate l = LocalDate.now();
+//        l.add
+        System.out.println(l);
+
+        String str = "2021-09-08";
+        Date date = new Date(str);
+//        if(date<new Date()){
+
     }
 
 }
