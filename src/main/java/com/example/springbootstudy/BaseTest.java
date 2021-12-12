@@ -11,8 +11,11 @@
 package com.example.springbootstudy;
 
 import com.example.springbootstudy.system.SystemTest;
+import com.google.common.collect.Lists;
 
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * 〈一句话功能简述〉<br> 
@@ -79,6 +82,15 @@ public class BaseTest {
         }
         System.out.println(Arrays.toString(d));
         System.out.println("d修改完了"+System.identityHashCode(d));
+
+        List<String> strings = Lists.newArrayList("1", "2", "3");
+        Iterator<String> iterator = strings.iterator();
+        while (iterator.hasNext()) {
+            String s = iterator.next();
+            if (s.equals("3")) {
+                iterator.remove();
+            }
+        }
     }
 
 }

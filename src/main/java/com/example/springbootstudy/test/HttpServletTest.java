@@ -10,7 +10,6 @@
  */
 package com.example.springbootstudy.test;
 
-import org.springframework.http.HttpRequest;
 
 import javax.servlet.http.HttpServlet;
 
