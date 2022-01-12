@@ -1,4 +1,4 @@
-package com.example.springbootstudy.base;
+package com.example.springbootstudy.test.thread;
 
 //线程唤醒问题
 //        样例代码

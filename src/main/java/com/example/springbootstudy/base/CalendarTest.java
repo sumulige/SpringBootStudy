@@ -26,7 +26,13 @@ public class CalendarTest {
 
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         Calendar cal1 = Calendar.getInstance();
-        System.out.println("cal1+getTime" + cal1.getTime());
+
+        System.out.println(
+
+        );
+        System.out.println("cal1+getTime" + cal1.getTime().getTime());
+        System.out.println("cal1+getTime" +
+                "" + cal1.getTime());
         cal1.add(Calendar.MARCH, -3);
 //        String s =
         System.out.println(cal1);
