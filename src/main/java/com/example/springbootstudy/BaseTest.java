@@ -10,15 +10,18 @@
  */
 package com.example.springbootstudy;
 
+import com.example.springbootstudy.emumTest.EmumTest;
 import com.example.springbootstudy.system.SystemTest;
 import com.google.common.collect.Lists;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.validation.constraints.NotNull;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈数组final变化〉
  *
  * @author willem
@@ -27,10 +30,16 @@ import java.util.List;
  */
 public class BaseTest {
 
+    @Autowired
+    @NotNull
+    private EmumTest emumTest;
+
     private final SystemTest s = new SystemTest();
 
 
     public static void main(String[] args) {
+//        System.out.println(emumTest.say(););
+
         final SystemTest systemTest = new SystemTest();
         /**
          *
