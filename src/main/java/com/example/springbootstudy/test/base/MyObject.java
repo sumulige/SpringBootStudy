@@ -33,6 +33,8 @@ public class MyObject {
         synchronized (o) {
             System.out.println(ClassLayout.parseInstance(o).toPrintable());
         }
+
+        logger.info("123");
     }
 
 }
