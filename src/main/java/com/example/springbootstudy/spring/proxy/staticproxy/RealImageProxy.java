@@ -11,16 +11,16 @@
 package com.example.springbootstudy.spring.proxy.staticproxy;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈girl代理类〉
  *
  * @author willem
  * @create 2021/5/26
  * @since 1.0.0
  */
-public class RealImageProxy implements Image{
+public class RealImageProxy implements Image {
 
-    private RealImage  realImage;
+    private RealImage realImage;
 
     private String fileName;
 

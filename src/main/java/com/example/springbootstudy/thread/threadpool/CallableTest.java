@@ -18,7 +18,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈任务返回型Callable〉
  *
  * @author willem
@@ -28,6 +28,7 @@ import java.util.concurrent.Executors;
 public class CallableTest {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
+
     public void callableTest() throws Exception {
         ExecutorService pool = Executors.newFixedThreadPool(5);
         Executors.callable(new Runnable() {

@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈反射方法测试〉
  *
  * @author willem
@@ -52,7 +52,6 @@ public class MethodInvokeTest {
         c2.toString();
 
 
-
         //\s需要转义\\s
         String[] split = s.split("\\s");
 
@@ -60,7 +59,7 @@ public class MethodInvokeTest {
 
 //        s.t
 
-        char[] c = new char[]{'h','e','l',};
+        char[] c = new char[]{'h', 'e', 'l',};
 
 //        c.
 
@@ -73,14 +72,14 @@ public class MethodInvokeTest {
     public String reverseWords(String s) {
         String[] temp = s.split("\\s");
         // StringBuilder sb = new StringBuilder();
-        for(int i  = 0;i < temp.length;i++){
+        for (int i = 0; i < temp.length; i++) {
             reversString(temp[i].toCharArray());
         }
         return temp.toString();
     }
 
-    public void reversString(char[] c){
-        for(int left = 0,right = c.length - 1;left < right;left++,right--){
+    public void reversString(char[] c) {
+        for (int left = 0, right = c.length - 1; left < right; left++, right--) {
             char ch = c[left];
             c[left] = c[right];
             c[right] = ch;

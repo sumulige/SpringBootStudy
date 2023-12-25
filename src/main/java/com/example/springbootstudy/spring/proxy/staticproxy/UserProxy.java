@@ -11,14 +11,14 @@
 package com.example.springbootstudy.spring.proxy.staticproxy;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈代理实现〉
  *
  * @author willem
  * @create 2021/9/28
  * @since 1.0.0
  */
-public class UserProxy implements UserService{
+public class UserProxy implements UserService {
 
     private UserServiceImpl us;
 
@@ -29,6 +29,6 @@ public class UserProxy implements UserService{
 
     @Override
     public void add(String s) {
-        us.add("代理"+s);
+        us.add("代理" + s);
     }
 }

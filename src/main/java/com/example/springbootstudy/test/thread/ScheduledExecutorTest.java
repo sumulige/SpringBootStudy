@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈测试任务〉
  *
  * @author willem
@@ -29,14 +29,14 @@ public class ScheduledExecutorTest {
             public void run() {
                 System.out.println("每隔3秒执行一次");
             }
-        },3, TimeUnit.SECONDS);
+        }, 3, TimeUnit.SECONDS);
 
         Executors.newScheduledThreadPool(3).scheduleAtFixedRate(new Runnable() {
             @Override
             public void run() {
                 System.out.println("延迟2秒每5秒执行一次");
             }
-        },2,5,TimeUnit.SECONDS);
+        }, 2, 5, TimeUnit.SECONDS);
     }
 
 }

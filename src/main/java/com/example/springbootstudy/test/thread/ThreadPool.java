@@ -14,7 +14,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈线程池〉
  *
  * @author willem
@@ -27,7 +27,7 @@ public class ThreadPool {
         ExecutorService fixedThreadPool = Executors.newFixedThreadPool(10);
 
         int i = 0;
-        while ( i < 5){
+        while (i < 5) {
             fixedThreadPool.execute(new Runnable() {
                 @Override
                 public void run() {
@@ -41,6 +41,6 @@ public class ThreadPool {
             });
             i++;
         }
-       
+
     }
 }

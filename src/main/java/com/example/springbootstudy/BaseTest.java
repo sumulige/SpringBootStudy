@@ -57,40 +57,40 @@ public class BaseTest {
          * [4, 5, 9, 9, 12, 3]
          * d修改完了1313922862
          */
-        Integer[] a = {1,2,3,4,7};
-        final Integer[] b ={1,2,6,6,9,0};
-        System.out.println("修改前"+System.identityHashCode(a));
+        Integer[] a = {1, 2, 3, 4, 7};
+        final Integer[] b = {1, 2, 6, 6, 9, 0};
+        System.out.println("修改前" + System.identityHashCode(a));
         for (int i = 0; i < 3; i++) {
-            a[i] +=2;
+            a[i] += 2;
         }
         System.out.println(Arrays.toString(a));
-        System.out.println("修改完了"+System.identityHashCode(a));
+        System.out.println("修改完了" + System.identityHashCode(a));
 
-        System.out.println("修改前"+System.identityHashCode(b));
+        System.out.println("修改前" + System.identityHashCode(b));
         for (int i = 0; i < b.length; i++) {
-            b[i] +=3;
+            b[i] += 3;
         }
         System.out.println(Arrays.toString(b));
-        System.out.println("修改完了"+System.identityHashCode(b));
+        System.out.println("修改完了" + System.identityHashCode(b));
 
 
         System.out.println("-------------------------");
 
-        Integer[] c = new Integer[]{1,2,3,4,7};
-        final Integer[] d =new Integer[]{1,2,6,6,9,0};
-        System.out.println("c修改前"+System.identityHashCode(c));
+        Integer[] c = new Integer[]{1, 2, 3, 4, 7};
+        final Integer[] d = new Integer[]{1, 2, 6, 6, 9, 0};
+        System.out.println("c修改前" + System.identityHashCode(c));
         for (int i = 0; i < 3; i++) {
-            c[i] +=2;
+            c[i] += 2;
         }
         System.out.println(Arrays.toString(c));
-        System.out.println("c修改完了"+System.identityHashCode(c));
+        System.out.println("c修改完了" + System.identityHashCode(c));
 
-        System.out.println("d修改前"+System.identityHashCode(d));
+        System.out.println("d修改前" + System.identityHashCode(d));
         for (int i = 0; i < b.length; i++) {
-            d[i] +=3;
+            d[i] += 3;
         }
         System.out.println(Arrays.toString(d));
-        System.out.println("d修改完了"+System.identityHashCode(d));
+        System.out.println("d修改完了" + System.identityHashCode(d));
 
         List<String> strings = Lists.newArrayList("1", "2", "3");
         Iterator<String> iterator = strings.iterator();

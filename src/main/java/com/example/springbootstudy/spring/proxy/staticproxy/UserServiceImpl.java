@@ -11,17 +11,17 @@
 package com.example.springbootstudy.spring.proxy.staticproxy;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈实现UserService接口〉
  *
  * @author willem
  * @create 2021/9/28
  * @since 1.0.0
  */
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     @Override
     public void add(String s) {
-        System.out.println("真正的实现类"+s);
+        System.out.println("真正的实现类" + s);
     }
 }

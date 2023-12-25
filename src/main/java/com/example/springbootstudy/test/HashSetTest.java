@@ -14,7 +14,7 @@ import java.util.HashSet;
 import java.util.LinkedHashMap;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈〉
  *
  * @author willem
@@ -30,7 +30,7 @@ public class HashSetTest {
 
         objects.size();
 
-        LinkedHashMap objectObjectLinkedHashMap = new LinkedHashMap<>(16,0.75f,false);
+        LinkedHashMap objectObjectLinkedHashMap = new LinkedHashMap<>(16, 0.75f, false);
         System.out.println(objects.size());
     }
 

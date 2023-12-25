@@ -18,7 +18,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈线程池的使用newFixedThreadPool〉
  *
  * @author willem
@@ -29,14 +29,14 @@ public class NewFixedThreadPool {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    public void newFixedThreadPoolTest(){
+    public void newFixedThreadPoolTest() {
         ExecutorService pool = Executors.newFixedThreadPool(5);
 
         pool.execute(new Runnable() {
             @Override
             public void run() {
 
-                logger.info("thread"+Thread.currentThread().getName()+ LocalTime.now()+"is running");
+                logger.info("thread" + Thread.currentThread().getName() + LocalTime.now() + "is running");
             }
         });
 
@@ -44,7 +44,7 @@ public class NewFixedThreadPool {
 
     public static void main(String[] args) throws ClassNotFoundException {
         int i = 0;
-        while(i<20) {
+        while (i < 20) {
             new NewFixedThreadPool().newFixedThreadPoolTest();
         }
     }

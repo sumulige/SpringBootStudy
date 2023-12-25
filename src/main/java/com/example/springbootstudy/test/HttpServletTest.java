@@ -14,7 +14,7 @@ package com.example.springbootstudy.test;
 import javax.servlet.http.HttpServlet;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈〉
  *
  * @author willem
@@ -22,8 +22,6 @@ import javax.servlet.http.HttpServlet;
  * @since 1.0.0
  */
 public class HttpServletTest extends HttpServlet {
-
-
 
 
 }

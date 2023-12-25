@@ -34,7 +34,7 @@ public class MyObject {
             System.out.println(ClassLayout.parseInstance(o).toPrintable());
         }
 
-        logger.info("123");
+//        logger.info("123");
     }
 
 }

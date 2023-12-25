@@ -11,9 +11,10 @@
 package com.example.springbootstudy.spring.proxy.staticproxy;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈测试类〉
- *      代理本质是隐藏 在不改变源码的基础上对功能上的增强
+ * 代理本质是隐藏 在不改变源码的基础上对功能上的增强
+ *
  * @author willem
  * @create 2021/5/26
  * @since 1.0.0

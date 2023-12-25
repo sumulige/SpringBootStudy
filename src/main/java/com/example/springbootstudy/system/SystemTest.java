@@ -2,11 +2,11 @@ package com.example.springbootstudy.system;
 
 import java.io.IOException;
 
-public class SystemTest  {
+public class SystemTest {
 
     public static void main(String[] args) throws IOException {
 
-        System.out.println("我的"+System.lineSeparator());
+        System.out.println("我的" + System.lineSeparator());
         System.out.println("好的");
 
 
@@ -90,8 +90,6 @@ public class SystemTest  {
 
 
         System.out.println(System.nanoTime());
-
-
 
 
     }

@@ -15,14 +15,14 @@ import java.util.ArrayList;
 import java.util.concurrent.*;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈线程池 callable 和runnable 〉
  *
  * @author willem
  * @create 2021/8/18
  * @since 1.0.0
  */
-public class MyCallable implements Callable{
+public class MyCallable implements Callable {
 
     public MyCallable(String s) {
     }
@@ -31,22 +31,21 @@ public class MyCallable implements Callable{
 
         ExecutorService es = Executors.newFixedThreadPool(5);
 
-        ArrayList<Future> list= new ArrayList<>();
+        ArrayList<Future> list = new ArrayList<>();
 
         for (int i = 0; i < 5; i++) {
             Callable c = new MyCallable(i + "hhhhh");
             Future f = es.submit(c);
 
             list.add(f);
-            
+
         }
 
         es.shutdown();
 
-        for (Future f: list){
-            System.out.println("res"+f.get().toString());
+        for (Future f : list) {
+            System.out.println("res" + f.get().toString());
         }
-
 
 
     }
@@ -61,7 +60,6 @@ public class MyCallable implements Callable{
     public Object call() throws Exception {
         return null;
     }
-
 
 
 }

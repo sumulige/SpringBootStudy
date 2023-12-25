@@ -11,18 +11,18 @@
 package com.example.springbootstudy.spring.proxy.staticproxy;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈girl类定义睡和吃的方法〉
  *
  * @author willem
  * @create 2021/5/26
  * @since 1.0.0
  */
-public class RealImage  implements Image{
+public class RealImage implements Image {
 
     private String fileName;
 
-    public  RealImage(String fileName) {
+    public RealImage(String fileName) {
         this.fileName = fileName;
         loadFromDisk(fileName);
     }
@@ -35,7 +35,7 @@ public class RealImage  implements Image{
     }
 
 
-    public void  loadFromDisk(String fileName){
+    public void loadFromDisk(String fileName) {
 
         System.out.println("LOADING" + fileName);
 

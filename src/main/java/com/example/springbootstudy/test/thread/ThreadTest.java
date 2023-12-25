@@ -11,18 +11,18 @@
 package com.example.springbootstudy.test.thread;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈线程测试〉
  *
  * @author willem
  * @create 2021/8/18
  * @since 1.0.0
  */
-public class ThreadTest extends Thread{
+public class ThreadTest extends Thread {
 
-    public void print(){
+    public void print() {
         for (int i = 0; i < 5; i++) {
-            System.out.println("hello"+i);
+            System.out.println("hello" + i);
         }
     }
 
