@@ -13,9 +13,9 @@ package com.example.springbootstudy;
 import com.example.springbootstudy.emumTest.EmumTest;
 import com.example.springbootstudy.system.SystemTest;
 import com.google.common.collect.Lists;
+import com.sun.istack.internal.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.validation.constraints.NotNull;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
